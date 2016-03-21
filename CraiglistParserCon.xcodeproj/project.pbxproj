@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FE46C162A0C10095FCCA0CE /* Pods_CraiglistParserCon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDA7FCFD956B82A91EB9745 /* Pods_CraiglistParserCon.framework */; };
+		A57400331C959726007A0C0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57400321C959726007A0C0E /* AppDelegate.swift */; };
+		A57400351C959726007A0C0E /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57400341C959726007A0C0E /* MasterViewController.swift */; };
+		A57400371C959726007A0C0E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57400361C959726007A0C0E /* DetailViewController.swift */; };
+		A574003A1C959726007A0C0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57400381C959726007A0C0E /* Main.storyboard */; };
+		A574003C1C959726007A0C0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A574003B1C959726007A0C0E /* Assets.xcassets */; };
+		A574003F1C959726007A0C0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A574003D1C959726007A0C0E /* LaunchScreen.storyboard */; };
+		A57400671C96B796007A0C0E /* ContinentPageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57400661C96B796007A0C0E /* ContinentPageParser.swift */; };
+		A5C265501C9C46A700FE3186 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2654F1C9C46A700FE3186 /* Continent.swift */; };
+		A5C265531C9C46D900FE3186 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C265521C9C46D900FE3186 /* Site.swift */; };
+		A5C265551C9C471600FE3186 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C265541C9C471600FE3186 /* State.swift */; };
+		A5C265591C9C53C100FE3186 /* ContinentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C265581C9C53C100FE3186 /* ContinentContainer.swift */; };
+		A5DF6C861CA03AD800B90DC1 /* JSONRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DF6C851CA03AD800B90DC1 /* JSONRepresentable.swift */; };
+		A5DF6C881CA03B0300B90DC1 /* XMLRepresetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DF6C871CA03B0300B90DC1 /* XMLRepresetable.swift */; };
+		A5DF6C8C1CA03CA300B90DC1 /* ReportFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DF6C8B1CA03CA300B90DC1 /* ReportFunctions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A574004D1C959BE9007A0C0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C9F53E7D6FEB098CAA263B1 /* Pods-CraiglistParserCon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraiglistParserCon.release.xcconfig"; path = "Pods/Target Support Files/Pods-CraiglistParserCon/Pods-CraiglistParserCon.release.xcconfig"; sourceTree = "<group>"; };
+		681EB85FA5A230E4074FAB3C /* Pods-CraiglistParserCon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CraiglistParserCon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CraiglistParserCon/Pods-CraiglistParserCon.debug.xcconfig"; sourceTree = "<group>"; };
+		7FDA7FCFD956B82A91EB9745 /* Pods_CraiglistParserCon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CraiglistParserCon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A574002F1C959726007A0C0E /* CraiglistParserCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraiglistParserCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57400321C959726007A0C0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A57400341C959726007A0C0E /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		A57400361C959726007A0C0E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A57400391C959726007A0C0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A574003B1C959726007A0C0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A574003E1C959726007A0C0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A57400401C959726007A0C0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57400661C96B796007A0C0E /* ContinentPageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentPageParser.swift; sourceTree = "<group>"; };
+		A5C2654F1C9C46A700FE3186 /* Continent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
+		A5C265521C9C46D900FE3186 /* Site.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
+		A5C265541C9C471600FE3186 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		A5C265581C9C53C100FE3186 /* ContinentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentContainer.swift; sourceTree = "<group>"; };
+		A5DF6C851CA03AD800B90DC1 /* JSONRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRepresentable.swift; sourceTree = "<group>"; };
+		A5DF6C871CA03B0300B90DC1 /* XMLRepresetable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLRepresetable.swift; sourceTree = "<group>"; };
+		A5DF6C8B1CA03CA300B90DC1 /* ReportFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportFunctions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A574002C1C959726007A0C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE46C162A0C10095FCCA0CE /* Pods_CraiglistParserCon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A57400261C959726007A0C0E = {
+			isa = PBXGroup;
+			children = (
+				A57400311C959726007A0C0E /* CraiglistParserCon */,
+				A57400301C959726007A0C0E /* Products */,
+				E03368846385E71D17F215F5 /* Frameworks */,
+				EFF422658FA23760563B6A55 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A57400301C959726007A0C0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A574002F1C959726007A0C0E /* CraiglistParserCon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A57400311C959726007A0C0E /* CraiglistParserCon */ = {
+			isa = PBXGroup;
+			children = (
+				A57400321C959726007A0C0E /* AppDelegate.swift */,
+				A57400341C959726007A0C0E /* MasterViewController.swift */,
+				A57400361C959726007A0C0E /* DetailViewController.swift */,
+				A57400381C959726007A0C0E /* Main.storyboard */,
+				A574003B1C959726007A0C0E /* Assets.xcassets */,
+				A574003D1C959726007A0C0E /* LaunchScreen.storyboard */,
+				A57400401C959726007A0C0E /* Info.plist */,
+				A5C2654C1C9C271B00FE3186 /* app */,
+			);
+			path = CraiglistParserCon;
+			sourceTree = "<group>";
+		};
+		A5C2654C1C9C271B00FE3186 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				A5C265511C9C46AD00FE3186 /* model */,
+				A57400661C96B796007A0C0E /* ContinentPageParser.swift */,
+				A5DF6C8B1CA03CA300B90DC1 /* ReportFunctions.swift */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		A5C265511C9C46AD00FE3186 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A5C265581C9C53C100FE3186 /* ContinentContainer.swift */,
+				A5C2654F1C9C46A700FE3186 /* Continent.swift */,
+				A5C265541C9C471600FE3186 /* State.swift */,
+				A5C265521C9C46D900FE3186 /* Site.swift */,
+				A5DF6C851CA03AD800B90DC1 /* JSONRepresentable.swift */,
+				A5DF6C871CA03B0300B90DC1 /* XMLRepresetable.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		E03368846385E71D17F215F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA7FCFD956B82A91EB9745 /* Pods_CraiglistParserCon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFF422658FA23760563B6A55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				681EB85FA5A230E4074FAB3C /* Pods-CraiglistParserCon.debug.xcconfig */,
+				5C9F53E7D6FEB098CAA263B1 /* Pods-CraiglistParserCon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A574002E1C959726007A0C0E /* CraiglistParserCon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A57400431C959726007A0C0E /* Build configuration list for PBXNativeTarget "CraiglistParserCon" */;
+			buildPhases = (
+				B53FDA8C401E77E60BA7976F /* Check Pods Manifest.lock */,
+				A574002B1C959726007A0C0E /* Sources */,
+				A574002C1C959726007A0C0E /* Frameworks */,
+				A574002D1C959726007A0C0E /* Resources */,
+				A574004D1C959BE9007A0C0E /* Embed Frameworks */,
+				46D4E8DE659E3A55C2B00681 /* Embed Pods Frameworks */,
+				6582F4918B1D6927791518EB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CraiglistParserCon;
+			productName = CraiglistParserCon;
+			productReference = A574002F1C959726007A0C0E /* CraiglistParserCon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A57400271C959726007A0C0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Sergey Bavykin";
+				TargetAttributes = {
+					A574002E1C959726007A0C0E = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A574002A1C959726007A0C0E /* Build configuration list for PBXProject "CraiglistParserCon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A57400261C959726007A0C0E;
+			productRefGroup = A57400301C959726007A0C0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A574002E1C959726007A0C0E /* CraiglistParserCon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A574002D1C959726007A0C0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A574003F1C959726007A0C0E /* LaunchScreen.storyboard in Resources */,
+				A574003C1C959726007A0C0E /* Assets.xcassets in Resources */,
+				A574003A1C959726007A0C0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46D4E8DE659E3A55C2B00681 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CraiglistParserCon/Pods-CraiglistParserCon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6582F4918B1D6927791518EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CraiglistParserCon/Pods-CraiglistParserCon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B53FDA8C401E77E60BA7976F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A574002B1C959726007A0C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57400671C96B796007A0C0E /* ContinentPageParser.swift in Sources */,
+				A5DF6C881CA03B0300B90DC1 /* XMLRepresetable.swift in Sources */,
+				A5DF6C8C1CA03CA300B90DC1 /* ReportFunctions.swift in Sources */,
+				A5C265551C9C471600FE3186 /* State.swift in Sources */,
+				A57400371C959726007A0C0E /* DetailViewController.swift in Sources */,
+				A5C265501C9C46A700FE3186 /* Continent.swift in Sources */,
+				A5C265531C9C46D900FE3186 /* Site.swift in Sources */,
+				A57400351C959726007A0C0E /* MasterViewController.swift in Sources */,
+				A57400331C959726007A0C0E /* AppDelegate.swift in Sources */,
+				A5DF6C861CA03AD800B90DC1 /* JSONRepresentable.swift in Sources */,
+				A5C265591C9C53C100FE3186 /* ContinentContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A57400381C959726007A0C0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A57400391C959726007A0C0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A574003D1C959726007A0C0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A574003E1C959726007A0C0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A57400411C959726007A0C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A57400421C959726007A0C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A57400441C959726007A0C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 681EB85FA5A230E4074FAB3C /* Pods-CraiglistParserCon.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CraiglistParserCon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = pi.CraiglistParserCon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Debug;
+		};
+		A57400451C959726007A0C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9F53E7D6FEB098CAA263B1 /* Pods-CraiglistParserCon.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = CraiglistParserCon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = pi.CraiglistParserCon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A574002A1C959726007A0C0E /* Build configuration list for PBXProject "CraiglistParserCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57400411C959726007A0C0E /* Debug */,
+				A57400421C959726007A0C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A57400431C959726007A0C0E /* Build configuration list for PBXNativeTarget "CraiglistParserCon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57400441C959726007A0C0E /* Debug */,
+				A57400451C959726007A0C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A57400271C959726007A0C0E /* Project object */;
+}
