@@ -13,26 +13,27 @@ struct State: JSONRepresentable, XMLRepresetable {
     var sites: [Site]?
     
     func descriptionAsJson() -> String {
-        var formattedString = sites!
+        guard let sites = sites, name = name else {
+            return ""
+        }
+        
+        let formattedString = sites
             .map { $0.descriptionAsJson() }
             .joinWithSeparator(",\n")
         
-        formattedString = "{\n\"name\": \(name!),\n\"sites\":[" + formattedString
-        formattedString += "\n]}"
-        
-        return formattedString
+        return "{\n\"name\": \(name),\n\"sites\":[" + formattedString + "\n]}"
+
     }
     
     func descriptionAsXml() -> String {
-        let lastContinentName = sites?.last?.name
+        guard let sites = sites, name = name else {
+            return ""
+        }
         
-        var formattedString = sites!
-            .map { $0.descriptionAsXml() + (($0.name != lastContinentName) ? "\n" :"") }
-            .joinWithSeparator("")
+        let formattedString = sites
+            .map { $0.descriptionAsXml() }
+            .joinWithSeparator("\n")
         
-        formattedString = "<state name=\"\(name!)\">\n<sites>\n" + formattedString
-        formattedString += "\n</sites>\n</state>"
-        
-        return formattedString
+        return "<state name=\"\(name)\">\n<sites>\n" + formattedString + "\n</sites>\n</state>"
     }
 }

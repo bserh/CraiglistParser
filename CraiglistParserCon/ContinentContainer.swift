@@ -12,26 +12,26 @@ struct ContinentContainer: JSONRepresentable, XMLRepresetable {
     var continents: [Continent]?
     
     func descriptionAsJson() -> String {
-        var formattedString = continents!
+        guard let continents = continents else {
+            return ""
+        }
+        
+        let formattedString = continents
             .map { $0.descriptionAsJson() }
             .joinWithSeparator(",\n")
         
-        formattedString = "{\n\"continents\":[" + formattedString
-        formattedString += "\n]}"
-        
-        return formattedString
+        return "{\n\"continents\":[" + formattedString + "\n]}"
     }
     
     func descriptionAsXml() -> String {
-        let lastContinentName = continents?.last?.name
+        guard let continents = continents else {
+            return ""
+        }
         
-        var formattedString = continents!
-            .map { $0.descriptionAsXml() + (($0.name != lastContinentName) ? "\n" :"") }
-            .joinWithSeparator("")
+        let formattedString = continents
+            .map { $0.descriptionAsXml() }
+            .joinWithSeparator("\n")
 
-        formattedString = "<continents>\n" + formattedString
-        formattedString += "\n</continents>"
-        
-        return formattedString
+        return "<continents>\n" + formattedString + "\n</continents>"
     }
 }
